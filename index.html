@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collage mood board</title>
+	<style type="text/css">
+		.wrap {width: 1200px; margin:auto;}
+
+		.header {background-image: url('1.jpg'); height: 646px; position: relative;}
+		.header h1 {font-size: 130px; position: absolute; top:390px; left:30px; color: #f12f9b; transition: all 1s; z-index: 1; animation: trh 10s infinite linear}
+		.header p {font-size: 30px; position: absolute; top:575px; left:110px; color:#f12f9b; transition: all 1s; z-index: 1; animation: trp 3s infinite linear}
+
+		@keyframes trh{
+			to{transform: rotateX(330deg);}
+		}
+
+		@keyframes trp{
+			to{transform: rotateY(330deg);}
+		}
+
+		.m1 {position: absolute; top:500px; left:350px;}
+		.m2:hover {transform: scale(0.5); right:10px;}
+		.m2 {position: absolute; top:500px; right:400px; transition: all 1s; z-index: 3; animation: em 5s infinite alternate}
+
+		@keyframes em{
+			to{transition: 0.5s all ease;}
+		}
+
+		.lt {position: absolute; top:645px; left: 400px;}
+		.fl {position: absolute; width:800px; top:835px; right: 650px; transition: all 1s; z-index: 1; animation: fi 2s infinite alternate;}
+
+		@keyframes fi{
+			to{transform: rotate3d(0,1,2,60deg);}
+		}
+
+		.fl2 {position: absolute; top:530px; left:800px; transition: all 1s; z-index: 1; animation: fl 2s infinite alternate;}
+
+		@keyframes fl{
+			to{transform: rotate3d(0.5,1,0,30deg);}
+		}
+
+		.sec1 {position: relative;}
+		.sec1 .s1 {position: absolute; width:1300px;}
+		.sec1 .s2 {position: absolute; top:750px; right: 150px;}
+
+		.sec2 {position: relative;}
+		.sec2 .s3 {position: absolute; width: 800px; top:1250px; left:550px;}
+		.sec2 .s4 {position: absolute; width:600px; left:200px; top:1200px; animation: ta 0.5s infinite linear alternate;}
+
+		@keyframes ta{
+			to{left:300px;}
+		}
+
+		.sec2 .s5 {position: absolute; top:2300px; left:1000px; transition: all 1s; z-index: 1; animation: rt 2.5s infinite alternate;}
+
+		@keyframes rt{
+			to{transform: rotateX(50deg);}
+		}
+
+		.sec3 {position: relative; width: 1200px;}
+		.sec3 .s6{position: absolute; top:2700px; left:200px;}
+		.sec3 .s7{position: absolute; top:2950px;}
+		.sec3 .s8{position: absolute; top:3500px; left: 350px;}
+		.sec3 .s9{position: absolute; top:3270px; left: 200px; transition: all 1s; z-index: 1; animation: sk 2.5s infinite alternate;}
+
+		@keyframes sk{
+			to{transform: scale(2);}
+		}
+
+		.sec3 .s10{position: absolute; top:4000px; right:200px; transition: all 1s; z-index: 1; animation: sq 1s infinite alternate;}
+
+		@keyframes sq{
+			to{transform: scale(0.5);}
+		}
+
+		.sec3 .s11{position: absolute; top:4600px; left:300px;}
+
+		.sec4 {background-image: url('5.jpg'); background-size: 100%; height:2050px; margin-top: 4000px;}
+		.sec4 .s12 {width:1200px; margin-top:2000px;}
+		.sec4 .s13 {width:800px; position: absolute; right: 0px; top:6300px;}
+		.sec4 .s14 {width: 400px; position: absolute; right: 350px; top:6400px;}
+		.sec4 .s15 {width: 400px; position: absolute; right:750px; top:6500px;}
+		.sec4 .s16 {width: 400px; position: absolute; left: 0px; top:6400px;}
+		.sec4 .s17 {width: 400px; position: absolute; left:450px; top:7250px;}
+		.sec4 .s18 {width: 1000px; position: absolute; right:0px; top:7550px;}
+		.sec4 .s19 {width: 200px; position: absolute; right: 30px; top: 7000px;}
+
+		.sec5 {position: relative; display: block; transition: all 1s; z-index: 1; animation: ro 15s infinite linear}
+		.sec5 .s20 {width: 1200px; position: absolute; top:1331px; right: 0px;}
+		.sec5 .s21 {width: 300px; position: absolute; top:1500px; left:200px;}
+		.sec5 .s22 {width: 600px; position: absolute; left:0px; top:2000px;}
+		.sec5 h3 {position: absolute; font-size: 25px; top:1025px; font-weight: lighter; letter-spacing: 0.1em; line-height: 160%; color: #3e3;}
+		.sec5 .s24 {width: 200px; position: absolute; top:1150px; left:100px;}
+
+		@keyframes ro{
+			to{transform: rotate3d(1,0,0,60deg);}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<img class="m1" src="1.png">
+			<img class="m2" src="2.png">
+			<h1 class="m0">ettiM</h1>
+			<p>Bezirk Mitte</p>
+			<img class="lt" src="3.png">
+			<img class="fl" src="7.png">
+			<img class="fl2" src="8.png">
+		</div>
+
+		<section class="sec1">
+			<img class="s1" src="4.png">
+			<img class="s2" src="3.jpg">
+		</section>
+
+		<section class="sec2">
+			<img class="s3" src="5.png">
+			<img class="s4" src="6.png">
+			<img class="s5" src="9.png">
+		</section>
+
+		<section class="sec3">
+			<img class="s6" src="4.jpg">
+			<img class="s7" src="10.png">
+			<img class="s8" src="11.png">
+			<img class="s9" src="12.png">
+			<img class="s10" src="13.png">
+			<img class="s11" src="14.png">
+		</section>
+
+		<section class="sec4">
+			<img class="s12" src="15.png">
+			<img class="s13" src="16.png">
+			<img class="s14" src="17.png">
+			<img class="s15" src="18.png">
+			<img class="s16" src="19.png">
+			<img class="s17" src="20.png">
+			<img class="s18" src="21.png">
+			<img class="s19" src="22.png">
+ 		</section>
+
+ 		<section class="sec5">
+ 			<img class="s20" src="6.jpg">
+ 			<img class="s21" src="23.png">
+ 			<img class="s22" src="24.png">
+ 			<h3 class="s23">After the end of World War II in Europe, what remained of pre-war Germany west of the Oder-Neisse line was divided into four occupation zones (as per the Potsdam Agreement), each one controlled by one of the four occupying Allied powers: the United States, the United Kingdom, France and the Soviet Union. The capital of Berlin, as the seat of the Allied Control Council, was similarly subdivided into four sectors despite the city's location, which was fully within the Soviet zone.</h3>
+  			<img class="s24" src="25.png"> 
+  		</section>
+	</div>
+</body>
+</html>
